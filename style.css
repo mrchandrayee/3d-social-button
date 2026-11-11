@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e6e6e6; 
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    transform: perspective(1000px) rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+}
+
+.social-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 210px;
+    height: 65px;
+    background: #ffffff;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 0 25px;
+    transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.social-btn .icon {
+    font-size: 1.5rem;
+    margin-right: 18px;
+    transition: transform 0.4s ease;
+}
+
+.social-btn:hover {
+    transform: translate(15px, -15px);
+    color: #ffffff;  
+}
+
+.social-btn:hover .icon {
+    transform: scale(1.1); 
+}
+
+.facebook:hover {
+    background-color: #1877f2;
+    box-shadow: 
+        -1px 1px 0px #1565c0, -2px 2px 0px #1565c0, -3px 3px 0px #1565c0,
+        -4px 4px 0px #1565c0, -5px 5px 0px #1565c0, -6px 6px 0px #1565c0,
+        -7px 7px 0px #1565c0, -8px 8px 0px #1565c0, -9px 9px 0px #1565c0,
+        -10px 10px 0px #1565c0, -11px 11px 20px rgba(0, 0, 0, 0.3);
+}
+
+.twitter:hover {
+    background-color: #1da1f2;
+    box-shadow: 
+        -1px 1px 0px #0d8bd9, -2px 2px 0px #0d8bd9, -3px 3px 0px #0d8bd9,
+        -4px 4px 0px #0d8bd9, -5px 5px 0px #0d8bd9, -6px 6px 0px #0d8bd9,
+        -7px 7px 0px #0d8bd9, -8px 8px 0px #0d8bd9, -9px 9px 0px #0d8bd9,
+        -10px 10px 0px #0d8bd9, -11px 11px 20px rgba(0, 0, 0, 0.3);
+}
+
+.google:hover {
+    background-color: #db4437;
+    box-shadow: 
+        -1px 1px 0px #c23325, -2px 2px 0px #c23325, -3px 3px 0px #c23325,
+        -4px 4px 0px #c23325, -5px 5px 0px #c23325, -6px 6px 0px #c23325,
+        -7px 7px 0px #c23325, -8px 8px 0px #c23325, -9px 9px 0px #c23325,
+        -10px 10px 0px #c23325, -11px 11px 20px rgba(0, 0, 0, 0.3);
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 
+        -1px 1px 0px #b01c5c, -2px 2px 0px #b01c5c, -3px 3px 0px #b01c5c,
+        -4px 4px 0px #b01c5c, -5px 5px 0px #b01c5c, -6px 6px 0px #b01c5c,
+        -7px 7px 0px #b01c5c, -8px 8px 0px #b01c5c, -9px 9px 0px #b01c5c,
+        -10px 10px 0px #b01c5c, -11px 11px 20px rgba(0, 0, 0, 0.3);
+}
